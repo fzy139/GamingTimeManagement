@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cw.now.ScrollingActivity"
+    tools:showIn="@layout/edit">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/细节"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="300dp"
+            android:layout_marginTop="3dp"
+            android:text="细节"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="5dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="10dp"
+            android:src="@color/colorOrange"
+            app:layout_constraintEnd_toStartOf="@+id/细节"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_detail"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="top|center_vertical"
+            android:hint="@string/init_detail"
+            android:inputType="textMultiLine"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/细节"
+            app:layout_constraintTop_toBottomOf="@+id/细节" />
+
+        <ImageView
+            android:id="@+id/division1"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:src="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_detail" />
+
+
+        <TextView
+            android:id="@+id/奖励"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="296dp"
+            android:layout_marginTop="9dp"
+            android:text="奖励"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@id/细节"
+            app:layout_constraintTop_toBottomOf="@+id/division1" />
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="5dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="16dp"
+            android:src="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="@id/icon1"
+            app:layout_constraintTop_toBottomOf="@+id/division1" />
+
+        <EditText
+            android:id="@+id/edit_reward"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="top|center_vertical"
+            android:hint="@string/init_reward"
+            android:inputType="textMultiLine"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.375"
+            app:layout_constraintStart_toStartOf="@id/细节"
+            app:layout_constraintTop_toBottomOf="@+id/奖励" />
+
+        <ImageView
+            android:id="@+id/division2"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:src="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_reward" />
+
+        <TextView
+            android:id="@+id/阻力"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="296dp"
+            android:layout_marginTop="9dp"
+            android:text="阻力"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@id/细节"
+            app:layout_constraintTop_toBottomOf="@+id/division2" />
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="5dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:src="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="@id/icon1"
+            app:layout_constraintTop_toBottomOf="@+id/division2" />
+
+        <EditText
+            android:id="@+id/edit_obstacle"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="21dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="top|center_vertical"
+            android:inputType="textMultiLine"
+            android:hint="@string/init_obstacle"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.375"
+            app:layout_constraintStart_toStartOf="@id/细节"
+            app:layout_constraintTop_toBottomOf="@+id/阻力" />
+
+        <ImageView
+            android:id="@+id/division3"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:src="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_obstacle" />
+
+        <TextView
+            android:id="@+id/策略"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="296dp"
+            android:layout_marginTop="9dp"
+            android:text="策略"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@id/细节"
+            app:layout_constraintTop_toBottomOf="@+id/division3" />
+
+        <ImageView
+            android:id="@+id/icon4"
+            android:layout_width="5dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:src="@android:color/holo_green_light"
+            app:layout_constraintStart_toStartOf="@id/icon1"
+            app:layout_constraintTop_toBottomOf="@+id/division3" />
+
+        <EditText
+            android:id="@+id/edit_strategy"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="21dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="top|center_vertical"
+            android:inputType="textMultiLine"
+            android:hint="@string/init_strategy"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.375"
+            app:layout_constraintStart_toStartOf="@id/细节"
+            app:layout_constraintTop_toBottomOf="@+id/策略" />
+
+        <ImageView
+            android:id="@+id/division4"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:src="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_strategy" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

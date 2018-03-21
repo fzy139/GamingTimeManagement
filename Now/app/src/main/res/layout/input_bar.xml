@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="background"
+        android:src="@color/gray_halftransparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newname" />
+
+    <EditText
+        android:id="@+id/newname"
+        android:layout_width="305dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:hint="发起新的挑战"
+        android:inputType="textPersonName"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageButton
+        android:id="@+id/set_ddl"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:background="@null"
+        android:backgroundTintMode="src_in"
+        android:contentDescription="ddl"
+        android:elevation="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ddl"
+        android:tint="@color/red_trans"
+        android:tintMode="src_in"
+        app:layout_constraintStart_toEndOf="@+id/set_obs"
+        app:layout_constraintTop_toTopOf="@+id/set_obs" />
+
+    <ImageButton
+        android:id="@+id/set_rwd"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="196dp"
+        android:background="@null"
+        android:contentDescription="rwd"
+        android:elevation="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/reward"
+        android:tint="@color/colorOrange"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/ddl_show" />
+
+    <ImageButton
+        android:id="@+id/set_obs"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:contentDescription="dtl"
+        android:elevation="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/obst"
+        app:layout_constraintStart_toEndOf="@+id/set_rwd"
+        app:layout_constraintTop_toTopOf="@+id/set_rwd"
+        app:srcCompat="@drawable/obst" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="172dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/ddl_show"
+        android:layout_width="129dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/red_trans"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:fadingEdge="none"
+        android:src="@color/gray_halftransparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ok"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/enter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+</android.support.constraint.ConstraintLayout>

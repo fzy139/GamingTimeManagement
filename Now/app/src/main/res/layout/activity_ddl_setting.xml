@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cw.now.DdlSetting">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="时间限制"
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <ImageButton
+            android:id="@+id/finish"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|end"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ok" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_ddl_setting" />
+
+</android.support.design.widget.CoordinatorLayout>
